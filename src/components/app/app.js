@@ -87,10 +87,7 @@ export default class App extends Component {
     if (term.length === 0) {
       return items
     }
-
-    return items.filter((item) => {
-      return item.label.indexOf(term) > -1
-    });
+    return items.filter(item => item.label.indexOf(term) > - 1);
   }
 
   filterPost(items, filter) {
